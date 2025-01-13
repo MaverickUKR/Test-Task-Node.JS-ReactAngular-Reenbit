@@ -30,7 +30,7 @@ const Message = () => {
         alt="Jese image"
       />
       <div className="bubble left">
-        <p className="text-sm font-normal text-white">Users will really appreciate the improvements.</p>
+        <p className="text-sm font-normal text-white">Татко, ти можеш сьогодні з нами пограти в настолки?</p>
       </div>
     </div>
     <div className="flex ml-10">
@@ -41,7 +41,7 @@ const Message = () => {
   <div className="mb-4">
     <div className="flex items-center justify-end gap-2.5">
       <div className="bubble right">
-        <p className="text-sm font-normal text-white">Thank you! {"That's"} helpful! 👍</p>
+        <p className="text-sm font-normal text-white">Привіт, доню! 👋 Звичайно можу, але після вечері</p>
       </div>
     </div>
     <div className="flex justify-end mr-10">
