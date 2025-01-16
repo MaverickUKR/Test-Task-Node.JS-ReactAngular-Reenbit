@@ -37,3 +37,9 @@
     font-size: 20px;
   }
   
+    /* Дополнительный стиль для выравнивания текста */
+  .chat-wrapper {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+  }
