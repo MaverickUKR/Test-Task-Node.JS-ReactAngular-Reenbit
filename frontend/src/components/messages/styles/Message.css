@@ -1,0 +1,77 @@
+.bubble {
+    --r: 1em;  /* радиус закругления */
+    --t: 1.5em; /* размер хвостика */
+  
+    max-width: 300px;
+    padding: 1em;
+    border-inline: var(--t) solid transparent;
+    border-radius: calc(var(--r) + var(--t)) var(--r);
+    mask: 
+      radial-gradient(100% 100% at var(--_p) 0, transparent 99%, #000 102%) 
+        var(--_p) 100%/var(--t) var(--t) no-repeat,
+      linear-gradient(#000 0 0) padding-box;
+    color: #fff;
+  }
+  
+  .left {
+    --_p: 0;
+    border-bottom-left-radius: 0 0;
+    align-self: flex-start;
+    background-color: rgb(31 41 55);
+  }
+  
+  .right {
+    --_p: 100%;
+    border-bottom-right-radius: 0 0;
+    align-self: flex-end;
+    background: blue;
+  }
+  
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-content: center;
+    gap: 20px;
+    font-family: system-ui, sans-serif;
+    font-size: 20px;
+  }
+  
+    /* Дополнительный стиль для выравнивания текста */
+  .chat-wrapper {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+  }
+
+  /* SHAKE ANIMATION ON HORIZONTAL DIRECTION */
+
+  .shake {
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) 0.2s both;
+    transform: translate3d(-1px, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0);
+    }
+
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
