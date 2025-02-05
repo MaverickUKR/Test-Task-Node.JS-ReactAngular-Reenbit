@@ -19,24 +19,28 @@ const Message = ({ message }) => {
 
   return (
     <>
-    <div className={`flex chat-wrapper mt-6 ${userAvatar}`}>
-      <div className={`flex items-center ${msgSendTime}`}>
-        <img
-          className="w-8 h-8 rounded-full"
-          src={profilePic}
-          alt="Profile image"
-        />
-      </div>
-      <div className={`${chatClassName} ${shakeClass}`}>
-        <div>
-          <p className="text-sm font-normal text-white">{message.message}</p>
+      <div className={`flex chat-wrapper mt-6 ${userAvatar}`}>
+        <div className={`flex items-center ${msgSendTime}`}>
+          <img
+            className="max-w-8 max-h-8 rounded-full max-[475px]:w-5 max-[475px]:h-5"
+            src={profilePic}
+            alt="Profile image"
+          />
+        </div>
+        <div className={`${chatClassName} ${shakeClass}`}>
+          <div>
+            <p className="text-sm max-[768px]:text-[0.7rem] max-[475px]:text-[0.5rem]/3 font-normal text-white">
+              {message.message}
+            </p>
+          </div>
         </div>
       </div>
-    </div>
-    <div className={`flex mt-3 ml-10 ${msgSendTime}`}>
-        <span className="text-sm font-normal text-gray-200">{formattedTime}</span>
+      <div className={`flex mt-3 ml-10 ${msgSendTime}0`}>
+        <span className="min-[475px]:text-sm font-normal text-gray-200">
+          {formattedTime}
+        </span>
       </div>
-      </>
+    </>
   );
 };
 

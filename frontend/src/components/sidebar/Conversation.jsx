@@ -17,14 +17,14 @@ const Conversation = ({conversation, lastIdx}) => {
       `}
        onClick={() => setSelectedConversation(conversation)}>
       <div className="my-2 relative">
-          <img className="w-10 h-10 rounded-full" src={conversation.profilePic} alt="user avatar" />
+          <img className="w-6 h-6 rounded-full xs:w-10 xs:h-10" src={conversation.profilePic} alt="user avatar" />
           <span className={`${isOnline ? "conv conv_active" : "conv conv_inactive"}`}></span>
        </div>
 
         <div className="flex flex-col flex-1">
             <div className="flex gap-3 justify-between">
                 <p className="font-bold text-gray-200">{conversation.fullName}</p>
-                <span className="text-xl"></span>
+                <span className="text-xl max-[475px]:text-sm"></span>
             </div>
         </div>
        </div>

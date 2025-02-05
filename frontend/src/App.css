@@ -5,6 +5,12 @@
   text-align: center;
 }
 
+@media screen and (max-height: 475px) {
+  body {
+    box-sizing: border-box;
+  }
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;

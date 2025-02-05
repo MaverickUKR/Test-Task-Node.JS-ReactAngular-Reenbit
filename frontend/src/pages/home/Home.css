@@ -1,0 +1,3 @@
+.max-h-fill {
+    max-height: -webkit-fill-available;
+  }
