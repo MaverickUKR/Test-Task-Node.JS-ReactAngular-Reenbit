@@ -15,6 +15,7 @@ body {
   #root {
     padding: 0;
     height: 70vh;
+    margin: 15vh 0;
   }
 }
 
