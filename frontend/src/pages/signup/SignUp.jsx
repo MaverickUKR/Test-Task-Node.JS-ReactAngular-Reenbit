@@ -36,12 +36,12 @@ const SignUp = () => {
         <form onSubmit={handleSubmit}>
           <div>
             <label className="label">
-              <span className="text-white mt-3">Full Name</span>
+              <span className="text-white mt-3 max-[475px]:text-lg">Full Name</span>
             </label>
             <input
               type="text"
               placeholder="Enter full name"
-              className="text-white bg-gray-800 w-full input h-10"
+              className="text-white bg-gray-800 w-full input h-10 max-[475px]:text-lg"
               value={inputs.fullName}
               onChange={(e) =>
                 setInputs({ ...inputs, fullName: e.target.value })
@@ -51,12 +51,12 @@ const SignUp = () => {
 
           <div>
             <label className="label">
-              <span className="text-white mt-3">Username</span>
+              <span className="text-white mt-3 max-[475px]:text-lg">Username</span>
             </label>
             <input
               type="text"
               placeholder="Enter username"
-              className="text-white bg-gray-800 w-full input h-10"
+              className="text-white bg-gray-800 w-full input h-10 max-[475px]:text-lg"
               value={inputs.username}
               onChange={(e) =>
                 setInputs({ ...inputs, username: e.target.value })
@@ -66,12 +66,12 @@ const SignUp = () => {
 
           <div>
             <label className="label">
-              <span className="text-white mt-3">Password</span>
+              <span className="text-white mt-3 max-[475px]:text-lg">Password</span>
             </label>
             <input
               type="password"
               placeholder="Enter password"
-              className="text-white bg-gray-800 w-full input h-10"
+              className="text-white bg-gray-800 w-full input h-10 max-[475px]:text-lg"
               value={inputs.password}
               onChange={(e) =>
                 setInputs({ ...inputs, password: e.target.value })
@@ -81,12 +81,12 @@ const SignUp = () => {
 
           <div>
             <label className="label">
-              <span className="text-white mt-3">Confirm Password</span>
+              <span className="text-white mt-3 max-[475px]:text-lg">Confirm Password</span>
             </label>
             <input
               type="password"
               placeholder="Confirm password"
-              className="text-white bg-gray-800 w-full input h-10"
+              className="text-white bg-gray-800 w-full input h-10 max-[475px]:text-lg"
               value={inputs.confirmPassword}
               onChange={(e) =>
                 setInputs({ ...inputs, confirmPassword: e.target.value })

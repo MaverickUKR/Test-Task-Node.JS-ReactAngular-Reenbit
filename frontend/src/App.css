@@ -4,10 +4,16 @@
   padding: 2rem;
   text-align: center;
 }
+body {
+  overflow-y: hidden;
+}
 
-@media screen and (max-height: 475px) {
+@media screen and (min-height: 475px) {
   body {
     box-sizing: border-box;
+  }
+  #root {
+    padding: 0;
   }
 }
 

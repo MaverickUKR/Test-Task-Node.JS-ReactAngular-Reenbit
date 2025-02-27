@@ -1,3 +1,11 @@
 .max-h-fill {
     max-height: -webkit-fill-available;
   }
+
+  @media screen and (min-height: 475px) {
+    .max-h-fill {
+      max-height: 85vh;
+      min-height: 85vh;
+      padding: 0;
+    }
+  }

@@ -15,7 +15,7 @@ const MessageContainer = () => {
   }, [setSelectedConversation])
 
   return (
-    <div className="md:min-h-[475px] max-h-fill flex flex-col">
+    <div className="md:min-h-[475px] max-h-fill flex flex-col max-[475px]:w-4/6 xs:w-4/6">
     {!selectedConversation ? <NoChatSelected /> :  
       <>
         {/* Header */}
@@ -38,7 +38,7 @@ const NoChatSelected = () => {
   const {authUser} = useAuthContext();
   return (
     <div className="flex items-center justify-center w-full h-full">
-      <div className="px-4 text-center sm:text-sm md:text-sm text-gray-200 font-semibold flex flex-col items-center gap-2">
+      <div className="px-4 text-center sm:text-sm md:text-sm text-gray-200 font-semibold flex flex-col items-center gap-2  max-[475px]:self-baseline  max-[475px]:mt-[10vh] max-[475px]:text-[12px]">
         <p>Welcome 👋 {authUser.fullName} ❄</p>
         <p>Select a chat to start messaging</p>
         <TiMessages className='text-3xl md:text-6xl text-center' />

@@ -4,7 +4,7 @@ const GenderCheckbox = ({onCheckboxChange, selectedGender}) => {
       <div className="flex items-start mt-3 mb-3 mr-3">
         <label
           htmlFor="male"
-          className={`text-gray-50 ms-2 text-s font-medium ${selectedGender === "male" ? "selected" : ""}`}
+          className={`text-gray-50 ms-2 text-s font-medium max-[475px]:text-lg ${selectedGender === "male" ? "selected" : ""}`}
         >
           Male
         </label>
@@ -23,7 +23,7 @@ const GenderCheckbox = ({onCheckboxChange, selectedGender}) => {
       <div className="flex items-start mt-3 mb-3">
         <label
           htmlFor="female"
-          className={`text-gray-50 ms-2 text-s font-medium ${selectedGender === "female" ? "selected" : ""}`}
+          className={`text-gray-50 ms-2 text-s font-medium max-[475px]:text-lg ${selectedGender === "female" ? "selected" : ""}`}
         >
           Female
         </label>

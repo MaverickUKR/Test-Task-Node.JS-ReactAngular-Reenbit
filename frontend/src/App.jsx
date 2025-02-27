@@ -12,7 +12,7 @@ function App() {
   const { authUser } = useAuthContext();
 
   return (
-    <div className='p-4 h-screen flex items-center justify-center'>
+    <div className='p-4 h-screen flex items-center justify-center max-[475px]:p-1 xs:p-1'>
       <Routes>
         {/* Защищённый маршрут для главной страницы */}
         <Route

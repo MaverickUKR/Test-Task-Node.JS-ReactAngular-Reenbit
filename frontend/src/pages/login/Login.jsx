@@ -28,16 +28,16 @@ const Login = () => {
         <form onSubmit={handleSubmit}>
         <div>
             <label className="label p-2">
-              <span className="text-white mt-3">Username</span>
+              <span className="text-white mt-3 max-[475px]:text-lg">Username</span>
             </label>
-            <input type="text" placeholder="Enter username" className="text-white bg-gray-800 w-full input h-10" value={username} onChange={(e) => setUsername(e.target.value)}/>
+            <input type="text" placeholder="Enter username" className="text-white bg-gray-800 w-full input h-10 max-[475px]:text-lg" value={username} onChange={(e) => setUsername(e.target.value)}/>
         </div>
         
         <div>
           <label className="label">
-            <span className="text-white mt-3">Password</span>
+            <span className="text-white mt-3 max-[475px]:text-lg">Password</span>
           </label>
-          <input type="password" placeholder="Enter password" className="text-white bg-gray-800 w-full input h-10" value={password} onChange={(e) => setPassword(e.target.value)} />
+          <input type="password" placeholder="Enter password" className="text-white bg-gray-800 w-full input h-10 max-[475px]:text-lg" value={password} onChange={(e) => setPassword(e.target.value)} />
         </div>    
         
         <Link to={'/signup'} className="flex text-gray-300 text-sm hover:underline hover:text-blue-600 mt-3">
