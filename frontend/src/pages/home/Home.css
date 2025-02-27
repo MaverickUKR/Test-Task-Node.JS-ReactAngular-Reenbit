@@ -4,8 +4,8 @@
 
   @media screen and (min-height: 475px) {
     .max-h-fill {
-      max-height: 85vh;
-      min-height: 85vh;
+      max-height: 100vh;
+      min-height: 100vh;
       padding: 0;
     }
   }
